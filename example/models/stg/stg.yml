@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_onlineretail
+    description: "A starter dbt customer model for jaffle_shop"
+    columns:
+        - name: invoiceno
+          description: "The primary key for this table"
+          tests:
+              - not_null
+
+        - name: invoicedate
+          description: "The primary key for this table"
+          tests:
+              - not_null

@@ -19,11 +19,14 @@ data-paths: ["data"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
+packages:
+  - package: fishtown-analytics/dbt_utils
+    version: 0.5.1
+
 target-path: "target"  # directory which will store compiled SQL files
 clean-targets:         # directories to be removed by `dbt clean`
     - "target"
     - "dbt_modules"
-
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -34,5 +37,5 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   test_project:
       # Applies to all files under models/example/
-      example:
-          materialized: view
+      stg:
+        schema: stg

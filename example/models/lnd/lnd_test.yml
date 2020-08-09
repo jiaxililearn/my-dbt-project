@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: lnd_onlineretail
+    description: "incremental lnd table"
+    columns:
+        - name: invoiceno
+          description: "The primary key for this table"
+          tests:
+              - is_not_null
+
+        - name: invoicedate
+          description: "The primary key for this table"
+          tests:
+              - is_not_null
+
+        - name: customerid
+          description: "count the number of 2 tables"
+          tests:
+            - is_count_equal:
+                to: "lnd.onlineretail"
+                field: customerid
