@@ -1,7 +1,7 @@
 {% set table_name = "lnd.onlineretail" %}
-{% set incremental_key = "invoicedate" %}
-{% set incremental_key_type = "timestamp" %}
-{% set timestamp_format = "DD/MM/YY HH:MI" %}
+{% set incremental_key = "invoiceno" %}
+{% set incremental_key_type = "" %}
+{% set timestamp_format = "" %}
 
 {{
 generate_incremental_table_query(
