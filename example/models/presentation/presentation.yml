@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: agg_onlineretail
+    description: "A aggregated retail invoice"
+    columns:
+        - name: invoiceno
+          description: "The primary key for this table"
+          tests:
+              - not_null
+
+        - name: invoicedate
+          description: "The primary key for this table"
+          tests:
+              - not_null

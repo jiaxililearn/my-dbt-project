@@ -39,3 +39,5 @@ models:
       # Applies to all files under models/example/
       stg:
         schema: stg
+      presentation:
+        schema: presentation
