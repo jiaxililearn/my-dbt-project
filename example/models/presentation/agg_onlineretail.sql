@@ -12,7 +12,7 @@ with final as (
   SELECT
 
   {% for key in group_by_key_list %}
-  {{ key }}::text,
+  {{ key }},
   {% endfor %}
 
   {% for key in sum_key_list %}

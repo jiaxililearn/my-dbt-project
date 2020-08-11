@@ -18,5 +18,5 @@ models:
           description: "count the number of 2 tables"
           tests:
             - is_count_equal:
-                to: "lnd.onlineretail"
+                to: "replica.onlineretail"
                 field: customerid

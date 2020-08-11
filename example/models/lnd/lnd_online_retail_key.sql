@@ -1,4 +1,4 @@
-{% set table_name = "lnd.onlineretail" %}
+{% set table_name = "replica.onlineretail" %}
 {% set incremental_key = "invoiceno" %}
 {% set incremental_key_type = "" %}
 {% set timestamp_format = "" %}
